@@ -1,4 +1,9 @@
-import { RouteRecordRaw, createRouter, createWebHistory } from "vue-router";
+import {
+  RouteRecordRaw,
+  createRouter,
+  createWebHistory,
+  RouterView,
+} from "vue-router";
 
 declare module "vue-router" {
   interface RouteMeta {
@@ -9,7 +14,7 @@ declare module "vue-router" {
 const routes: RouteRecordRaw[] = [
   {
     path: "/",
-    component: () => import("./layout").then((m) => m.Layout),
+    component: <RouterView />,
     children: [
       {
         path: "dashboard",

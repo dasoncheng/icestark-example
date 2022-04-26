@@ -7,7 +7,7 @@ module.exports = {
   },
   output: {
     // 设置 library name，该值需要与第二步的 setLibraryName 的入参保持一致
-    library: `module-angular-follow-up`,
+    library: `micro-angular`,
     // 将应用打包 umd 规范
     libraryTarget: "umd",
   },

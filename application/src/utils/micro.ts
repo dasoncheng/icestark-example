@@ -8,15 +8,17 @@ export function MicroAppsMount(props: {
   registerMicroApps([
     {
       name: "micro-angular",
-      activePath: "/module-b",
+      title:"模块Angulae",
+      activePath: "/module-angular",
       container: props.container,
       entry: "http://localhost:3001",
     },
     {
       name: "micro-vue",
-      activePath: "/module-a",
+      title:"模块Vue",
+      activePath: "/module-vue",
       container: props.container,
-      url: ["/module-a/micro-vue.umd.js"],
+      url: ["/module-vue/micro-vue.umd.js"],
     },
   ]);
 

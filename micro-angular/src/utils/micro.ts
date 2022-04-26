@@ -2,7 +2,7 @@ import appHistory from '@ice/stark-app/lib/appHistory';
 import renderNotFound from '@ice/stark-app/lib/renderNotFound';
 import setLibraryName from '@ice/stark-app/lib/setLibraryName';
 
-setLibraryName('module-angular-follow-up');
+setLibraryName('micro-angular');
 
 export const NotFound = () => {
   return new Promise<boolean>((resolve) => {
